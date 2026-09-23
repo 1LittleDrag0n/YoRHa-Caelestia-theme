@@ -1,0 +1,5 @@
+*.log
+*.cache
+__pycache__/
+config/caelestia/yorha-dock-pos.json
+config/caelestia/yorha-dock-pins.json

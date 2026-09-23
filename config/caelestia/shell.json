@@ -1,0 +1,37 @@
+{
+    "appearance": {
+        "font": {
+            "body": {
+                "family": "JetBrainsMono Nerd Font"
+            },
+            "clock": "JetBrainsMono Nerd Font",
+            "headline": {
+                "family": "JetBrainsMono Nerd Font"
+            },
+            "label": {
+                "family": "JetBrainsMono Nerd Font"
+            },
+            "mono": {
+                "family": "JetBrainsMono Nerd Font"
+            },
+            "title": {
+                "family": "JetBrainsMono Nerd Font"
+            },
+            "workspaces": "JetBrainsMono Nerd Font"
+        },
+        "transparency": {
+            "base": 0.75,
+            "enabled": true,
+            "layers": 0.4
+        }
+    },
+    "launcher": {
+        "showOnHover": true
+    },
+    "notifs": {
+        "fullscreen": "Off"
+    },
+    "services": {
+        "gpuType": "Auto"
+    }
+}

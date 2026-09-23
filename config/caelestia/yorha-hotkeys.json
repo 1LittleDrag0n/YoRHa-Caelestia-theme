@@ -1,0 +1,9 @@
+{
+  "rename": {},
+  "hide": [],
+  "extra": [
+    { "cat": "Desktops", "keys": "Top-left corner", "action": "Window overview (mouse)" },
+    { "cat": "Desktops", "keys": "Left / right screen edge", "action": "Switch desktop (mouse)" },
+    { "cat": "Desktops", "keys": "4-finger swipe", "action": "Switch desktop (touchpad)" }
+  ]
+}
