@@ -1,0 +1,13 @@
+{
+  "x": 93,
+  "y": 305,
+  "use24": true,
+  "showSeconds": true,
+  "showBar": true,
+  "showDate": true,
+  "label": "YoRHa UNIT",
+  "scale": 1,
+  "opacity": 0.5,
+  "locked": false,
+  "monitor": ""
+}
