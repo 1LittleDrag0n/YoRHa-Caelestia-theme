@@ -1,0 +1,16 @@
+[
+  {
+    "builtin": "hotkeys",
+    "wide": true
+  },
+  {
+    "builtin": "trash"
+  },
+  {
+    "icon": "󰄡",
+    "label": "KDE Connect",
+    "exec": [
+      "kdeconnect-app"
+    ]
+  }
+]

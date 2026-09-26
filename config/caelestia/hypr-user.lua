@@ -108,7 +108,7 @@ end)
 
 -- YoRHa dock
 hl.on("hyprland.start", function()
-    hl.dispatch(hl.dsp.exec_cmd("qs -c yorha-dock -d"))
+    hl.dispatch(hl.dsp.exec_cmd("sh -c 'qs -c yorha-dock >/tmp/yorha-dock.log 2>&1'"))
 end)
 
 -- Wobbly windows
@@ -123,3 +123,7 @@ hl.config({ plugin = { hyprwobbly = {
 
 -- Wobbly windows
 hl.config({ plugin = { hyprwobbly = { glass_return_ms = 120 } } })
+
+-- Show / hide the dock
+hl.bind("SUPER + ALT + D", hl.dsp.exec_cmd("qs -c yorha-dock ipc call dock toggle"))
+

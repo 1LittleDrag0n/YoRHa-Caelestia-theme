@@ -124,6 +124,23 @@ ShellRoot {
                         font.letterSpacing: 1.5
                     }
                     Item { Layout.fillWidth: true }
+                    Text {          // yorha-settings-gear
+                        text: "󰒓"
+                        color: gearMouse.containsMouse ? root.cText : root.cSub
+                        font.family: root.fontName
+                        font.pixelSize: 12
+                        rightPadding: 8
+                        MouseArea {
+                            id: gearMouse
+                            anchors.fill: parent
+                            anchors.margins: -6
+                            hoverEnabled: true
+                            cursorShape: Qt.PointingHandCursor
+                            onClicked: Quickshell.execDetached(["sh", "-c",
+                                "cd \"$HOME/.config/caelestia\"; kate yorha-desk-buttons.json yorha-dock-buttons.json yorha-dock-icons.json yorha-hotkeys.json 2>/dev/null || xdg-open yorha-desk-buttons.json"])
+                        }
+                    }
+
                     Text {
                         text: root.expanded ? "[-]" : "[+]"
                         color: toggle.containsMouse ? root.cText : root.cSub

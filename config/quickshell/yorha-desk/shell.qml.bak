@@ -91,7 +91,13 @@ ShellRoot {
         color: "transparent"
 
         implicitWidth: panel.implicitWidth
-        implicitHeight: panel.implicitHeight
+        implicitHeight: panel.implicitHeight + 12 + hotkeysBtn.implicitHeight
+        HotkeysButton {
+            id: hotkeysBtn
+            y: panel.height + 12
+            width: panel.width
+            onClicked: hotkeys.open = true
+        }
 
         Rectangle {
             id: panel
@@ -208,5 +214,5 @@ ShellRoot {
             }
         }
     }
-    YorhaHotkeys { below: panel; posTop: root.posTop; posLeft: root.posLeft }
+    YorhaHotkeys { id: hotkeys }
 }

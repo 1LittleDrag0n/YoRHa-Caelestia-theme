@@ -1,0 +1,25 @@
+[
+  {
+    "icon": "󰂚",
+    "label": "Notifications",
+    "ipc": "drawers toggle sidebar"
+  },
+  {
+    "icon": "󰄡",
+    "label": "KDE Connect",
+    "menu": "kdeconnect"
+  },
+  {
+    "divider": true
+  },
+  {
+    "icon": "󰜉",
+    "label": "Restart",
+    "power": "reboot"
+  },
+  {
+    "icon": "󰐥",
+    "label": "Power off",
+    "power": "poweroff"
+  }
+]
