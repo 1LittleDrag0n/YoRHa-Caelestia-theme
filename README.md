@@ -75,3 +75,17 @@ paru -S hypr-kdeconnect-fix-git
 No config needed - the portal auto-selects it, and it is D-Bus activated.
 Do not add a portals.conf; pinning `default=` there changes routing for
 screencast and screenshot too.
+
+## KDE Connect remote input
+
+Needs `hypr-kdeconnect-fix-git` (AUR) - Hyprland has no RemoteDesktop portal.
+
+Two pieces matter:
+
+- `config/xdg-desktop-portal/portals.conf` pins the backend explicitly
+- `local-bin/yorha-portal-env.fish` re-restarts the portal 10s after login,
+  because xdg-desktop-portal picks its backends at startup - before Hyprland
+  has finished setting up the session - and keeps that choice all session.
+
+Symptom if this breaks: every other KDE Connect feature works, only remote
+input does not, and restarting the portal by hand fixes it until reboot.
