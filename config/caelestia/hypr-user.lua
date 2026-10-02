@@ -129,3 +129,4 @@ hl.bind("SUPER + ALT + D", hl.dsp.exec_cmd("qs -c yorha-dock ipc call dock toggl
 
     hl.dispatch(hl.dsp.exec_cmd("qs -c yorha-clock -d"))
     hl.dispatch(hl.dsp.exec_cmd("/usr/bin/kdeconnectd"))
+
