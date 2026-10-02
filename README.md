@@ -62,3 +62,16 @@ skips the prompts, `--no-plugins` leaves the plugins alone.
 `./privacy-check.py` scans for tokens, emails, IPs, MACs, phone numbers,
 coordinates and location settings, plus your own name, username, hostname and
 home path taken from this machine. `--fix` rewrites your home path to `$HOME`.
+
+## KDE Connect remote input
+
+Remote input (phone as touchpad/keyboard) needs a `RemoteDesktop` portal backend,
+which xdg-desktop-portal-hyprland does not implement yet:
+
+```sh
+paru -S hypr-kdeconnect-fix-git
+```
+
+No config needed - the portal auto-selects it, and it is D-Bus activated.
+Do not add a portals.conf; pinning `default=` there changes routing for
+screencast and screenshot too.

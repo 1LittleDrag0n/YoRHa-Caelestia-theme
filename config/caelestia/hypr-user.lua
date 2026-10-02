@@ -128,3 +128,4 @@ hl.config({ plugin = { hyprwobbly = { glass_return_ms = 120 } } })
 hl.bind("SUPER + ALT + D", hl.dsp.exec_cmd("qs -c yorha-dock ipc call dock toggle"))
 
     hl.dispatch(hl.dsp.exec_cmd("qs -c yorha-clock -d"))
+    hl.dispatch(hl.dsp.exec_cmd("/usr/bin/kdeconnectd"))
