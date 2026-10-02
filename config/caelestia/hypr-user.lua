@@ -130,3 +130,8 @@ hl.bind("SUPER + ALT + D", hl.dsp.exec_cmd("qs -c yorha-dock ipc call dock toggl
     hl.dispatch(hl.dsp.exec_cmd("qs -c yorha-clock -d"))
     hl.dispatch(hl.dsp.exec_cmd("/usr/bin/kdeconnectd"))
 
+
+-- Portals need the session env before they pick a backend
+hl.dispatch(hl.dsp.exec_cmd("/home/dragon/.local/bin/yorha-portal-env.fish"))
+
+hl.dispatch(hl.dsp.exec_cmd("/home/dragon/.local/bin/yorha-portal-env.fish"))
